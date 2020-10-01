@@ -12,7 +12,7 @@ Três arquivos devem ser modificados para execução:
 ### EXEC_CARGA_TERADATA.bat
 Script que executa um loop, passando os arquivos extraídos para o próximo script que fará o load do arquivo, acrescentando na base. Modificar a máscara de do arquivo de forma que ele coloque na fila todos os arquivos que vão ser carregados. Os arquivos devem ter um padrão comum para serem identificados.
 
-###SCRIPT_MLD.bat
+### SCRIPT_MLD.bat
 Script que escreve o arquivo script.mdl que será utilizado pelo MLOD. 
 1.	Trocar o host, usuário e  senha de acesso ao BD. Similar a uma string de conexão.
 2.	Trocar todas as palavras TABELA pelo nome da tabela a ser carregada. Atenção parao fato de que tem tabelas _LOG, _UV, _lay, etc. Todas essas também devem ser trocadas para o mesmo nome da tabela mantendo os sufixos.
